@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+header {
+    /* Dimensiones y Color */
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+
+.box-header {
+    /* Dimensiones y Color */
+    background-color: black;
+    height: inherit;
+    width: inherit;
+    opacity: 80%;
+    /* Posicion y Contenido */
+    position: fixed;
+    top: 0;
+    padding-top: 1vh;
+    display: flex;
+    /* justify-content:space-evenly; */
+    align-items: center;
+    gap: 10;
+    background-image: url(../images/textura-dark.png);
+
+    z-index: 10000000;
+}
+
+.logo {
+    /* Dimension y Color */
+    font-size: 2rem;
+    color: white;
+    /* Posicion */
+    margin-left: 0.5rem;
+}
+
+.nav-box {
+    padding-left: 3rem;
+}
+
+
+.nav-list {
+    /* background-color: black; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: pink;
+}
+
+.section-tools {
+    background-color: black;
+    height: 5vh;
+    display: flex;
+    flex: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+    /* ! Creo q no lo voy a incluir */
+}
+
+/* TODO Novedades no me convence */
+.section-novedades {
+    grid-area: ofertas;
+    height: auto;
+    background-color: black;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.section-novedades img {
+    width: inherit;
+}
+
+.section-novedades .text-novedades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-novedades h2 {
+    font-size: 3rem;
+    color: #f82d97;
+    text-shadow: 0 0 5px #ffacd7, 0 0 15px #ffc3e2, 0 0 30px #ffc3e2, 0 0 50px #ffc3e2;
+}
+
+.section-principal {
+    /* height: 60vh; */
+    /* margin-top: 5rem;
+    margin-bottom: 5rem; */
+    /* grid-area: main; */
+    display: flex;
+    flex-flow: row;
+    /* max-height: 80vh; */
+    overflow: hidden;
+    width: 100vw;
+    min-height: 60vh;
+
+}
+
+.section-principal a {
+    display: inline-block;
+    position: relative;
+    width: calc(100vw / 3);
+    height: 60vh;
+    transition: all 1s;
+    filter: grayscale(40%);
+    overflow: hidden;
+}
+
+.section-principal a h3 {
+    position: absolute;
+    font-size: 4rem;
+    width: 100%;
+    top: calc(50% - 4rem);
+    text-align: center;
+    color: white;
+}
+
+.section-principal a:hover {
+    filter: grayscale(0);
+}
+
+
+/* .section-principal a{
+    width: 20vw;
+    height: 20vh;
+    text-decoration: none;
+    position: relative; 
+*/
+
+
+
+.section-principal a img {
+    /* max-width: inherit; */
+    width: calc(130vw / 3);
+
+}
+
+.section-contacto{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.section-contacto .box-form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-form form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box-form form input{
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-color: rgb(177, 204, 228);
+    border-style: double;
+    color: rgb(161, 248, 248);
+}
+
+.box-form form input::placeholder {
+    color:rgb(222, 222, 222) ;
+    opacity: 1; 
+  }
+
+
+footer {
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-image: url(../images/textura-dark.png);
+
+}
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer .box-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .box-social a {
+    text-decoration: none;
+    color: white;
+}
+
+/* * Media Queries */
+
+@media  (max-width: 840px) {
+    .section-principal{
+        flex-flow: column wrap
+    }
+
+    .section-principal a{
+        width: 100vw;
+    }
+    .section-principal a img{
+        width: 100vw;
+    }
+
+    .nav-box{
+        display: none;
+    }
+
+}

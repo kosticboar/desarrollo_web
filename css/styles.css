@@ -167,6 +167,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.container__img{
+    object-fit: cover;
 }
 
 /* * Media Queries */

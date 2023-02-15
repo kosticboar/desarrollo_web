@@ -8,6 +8,8 @@
     font-family: 'Acme', sans-serif;
 }
 
+/* HEADER */
+
 .header {
     /* Dimensiones y Color */
     background-color: black;
@@ -65,21 +67,8 @@
     color: pink;
 }
 
-.section-tools {
-    background-color: black;
-    height: 5vh;
-    display: flex;
-    flex: row wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5rem;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: none;
-    /* ! Creo q no lo voy a incluir */
-}
+/* NOVEDADES */
 
-/* TODO Novedades no me convence */
 .novedades {
     background-color: black;
     justify-content: flex-start;
@@ -102,6 +91,8 @@
     color: #f82d97;
     text-shadow: 0 0 5px #ffacd7, 0 0 15px #ffc3e2, 0 0 30px #f82d97, 0 0 50px #f82d97;
 }
+
+/* PRINCIPAL */
 
 .principal {
     display: flex;
@@ -139,43 +130,7 @@
     object-fit: cover;
 }
 
-.section-contacto{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-}
-
-.section-contacto .box-form{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-form form{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.box-form form input{
-    width: 20rem;
-    height: 3rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border-color: rgb(177, 204, 228);
-    border-style: double;
-    color: rgb(161, 248, 248);
-}
-
-.box-form form input::placeholder {
-    color:rgb(222, 222, 222) ;
-    opacity: 1; 
-}
-
+/* FOOTER */
 
 .footer {
     height: 30vh;

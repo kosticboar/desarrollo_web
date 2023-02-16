@@ -188,8 +188,40 @@
         width: 100vw;
     }
 
+    .header{
+        height: 35vh;
+    }
+
+    .header__container{
+        flex-direction: column;
+        height: 35vh;
+        position: absolute;
+        align-items: center;
+    }
+
     .header__nav{
-        display: none;
+        display: block;
+        width: 100%;
+    }
+
+    .header__logo{
+        display: block;
+    }
+
+    .header__list{
+        flex-direction: column;
+
+    }
+    .header__items{
+        display: flex;
+        height: 2.5rem;
+        justify-content: center;
+    }
+
+    .header__link{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
     }
 
 }

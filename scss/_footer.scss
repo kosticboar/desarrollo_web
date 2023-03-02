@@ -1,0 +1,26 @@
+.footer {
+	height: 30vh;
+	background-color: $background-color_1;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	background-image: url(../images/textura-dark.png);
+	h3 {
+		color: $color_1;
+	}
+	p {
+		color: $color_1;
+	}
+}
+.footer__social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.footer__icons {
+	font-size: 2rem;
+	color: $color_1;
+}

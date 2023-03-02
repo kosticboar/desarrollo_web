@@ -1,0 +1,44 @@
+
+/* HEADER */
+
+.header {
+	background-color: $background-color_1;
+	height: 10vh;
+	width: 100%;
+}
+.header__container {
+	background-color: $background-color_1;
+	height: 10vh;
+	width: 100%;
+	opacity: 80%;
+	position: fixed;
+	top: 0;
+	padding-top: 1vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-image: url(../images/textura-dark.png);
+	z-index: 10000000;
+}
+.header__logo {
+	font-size: 2rem;
+	color: $color_1;
+	padding-left: 1rem;
+}
+.header__nav {
+	padding-left: 3rem;
+}
+.header__list {
+	display: flex;
+	flex-flow: row wrap;
+	list-style: none;
+}
+.header__link {
+	text-decoration: none;
+	color: $color_1;
+	font-size: 1rem;
+	padding-right: 2rem;
+	&:hover {
+		color: $color_2;
+	}
+}

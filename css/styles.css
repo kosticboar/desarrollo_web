@@ -25,7 +25,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(../images/textura-dark.png);
   z-index: 10000000;
 }
 
@@ -110,15 +109,29 @@
   object-fit: cover;
 }
 
+.card .card-body .card-title {
+  color: white;
+}
+.card .card-body button {
+  background-color: pink;
+}
+.card .card-body button:hover {
+  background-color: white;
+  color: pink;
+}
+.card .card-body button:active {
+  background-color: pink;
+  color: white;
+}
+
 .footer {
-  height: 30vh;
   background-color: black;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  background-image: url(../images/textura-dark.png);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .footer h3 {
   color: white;
@@ -126,8 +139,13 @@
 .footer p {
   color: white;
 }
+.footer form {
+  display: flex;
+  flex-flow: row;
+}
 
 .footer__social {
+  margin-top: 1em;
   display: flex;
   justify-content: center;
   align-items: center;

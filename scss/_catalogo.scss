@@ -1,0 +1,19 @@
+.card{
+    .card-body{
+        .card-title{
+            color: $color_1;
+        }
+    
+        button{
+            background-color: $color_2;
+            &:hover {
+                background-color: $color_1;
+                color: $color_2;
+            }
+            &:active {
+                background-color: $color_2;
+                color: $color_1;
+            }
+        }
+    }
+}

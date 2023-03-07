@@ -1,0 +1,4 @@
+@mixin colorFondoYLetra($background, $color) {
+    background-color: $background;
+    color: $color;
+}

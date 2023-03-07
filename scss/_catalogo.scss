@@ -1,4 +1,9 @@
 .card{
+    background-color: $background-color_1;
+    .catalogo__imagen{
+        max-height: 10%;
+        overflow: hidden;
+    }
     .card-body{
         .card-title{
             color: $color_1;
@@ -7,12 +12,10 @@
         button{
             background-color: $color_2;
             &:hover {
-                background-color: $color_1;
-                color: $color_2;
+                @include colorFondoYLetra($color_1,$color_2);
             }
             &:active {
-                background-color: $color_2;
-                color: $color_1;
+                @include colorFondoYLetra($color_2,$color_1);
             }
         }
     }
